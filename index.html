@@ -1,4 +1,103 @@
-<html>
-hiiiiiiiiiiiiiii
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Welcome</title>
+<link href="college/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="background"></div>
+<div id="loading">
+
+<center id="loadingtext">you are on the right Way...</center>
+<center id="loadingtext2"><br /><br />
+we believe that you are the best.<br />
+and your seminar too...
+<br />
+<br />
+Loading...
+
+</center>
+</div>
+
+
+<div id="branch">
+<h1>you are from...</h1>
+
+<center>
+<div class="logoholder">
+<button id="blogo" onclick="gotoRegistration('cse');">Computer Science<br/> engineering</button>
+<button id="blogo" onclick="gotoRegistration('me');">Mechanical<br/>engineering</button>
+<button id="blogo" onclick="gotoRegistration('eee');">EEE</button>
+<button id="blogo" onclick="gotoRegistration('ece');">ECE</button>
+<button id="blogo" onclick="gotoRegistration('ce');">Civil<br />engineering</button>
+</div>
+</center>
+<br/>
+<center>
+<div class="rules">
+<h3>Common Points & Rules</h3>
+<h4>
+<ul>
+<li>1. Printout of the ticket issued is mandatory. Please note that no spot registrations available.</li><br />
+<li>2. Seminar will be accepted in any format(.pdf, .zip, .pptx). If format is new, please include a README file.</li>
+<i>&nbsp;&nbsp;&nbsp;if there are any dependencies in viewing, the whole thing will be rejected!</i><br /><br />
+
+<li>3. Until a specific date this site only accepts registrations and uploads. After scrutinization, this site only gives results.</li><br />
+<li>4. Under any circumstance, the decision of our scrutinizers is final.</li><br />
+<li>5. Branch specific rules are mentioned in respective wings.</li><br />
+
+</h4>
+
+</div>
+</center>
+
+</div>
+
+<div id="register">
+
+<h1>Computer Science and Engineering</h1>
+<p>change branch
+<span onclick="change('cse')" class="inner">&nbsp;&nbsp;Computers&nbsp;&nbsp;|</span><span onclick="change('me')" class="inner">&nbsp;&nbsp;Mechanical&nbsp;&nbsp;|</span><span onclick="change('ece')" class="inner">&nbsp;&nbsp;Electrical&nbsp;&nbsp;|</span><span onclick="change('eee')" class="inner">&nbsp;&nbsp;Electronics&nbsp;&nbsp;|</span><span onclick="change('ce')" class="inner">&nbsp;&nbsp;Civil Engineering&nbsp;&nbsp;</span>
+</p>
+<center>
+<div class="regBox">
+<h3>We Would like to know a little about yourself.</h3>
+<br />
+<input type="text" placeholder="Your name" id="name" autofill="false"/><br /><br />
+<input type="text" placeholder="Seminar Title" id="topic" autofill="false"/><br/><br />
+<input type="email" placeholder="me@xyz.com" id="email" autofill="false"/><br /><br />
+<input type="number" placeholder="mobile" id="phone"/><br/><br/>
+<input type="file" name="fileselect[]" placeholder="Upload your file here" accept=".zip,.pdf,.pptx,.docx" id="uploadme"/>
+<input type="button" value="Upload here" id="upload"/><br /><br />
+
+<input type="button" value="Proceed" onclick="uploadtophp()" class="proceed"/>
+</div>
+</center>
+</div>
+
+<div id="final">
+
+<h1>CEC-<span id="branchname"></span>-<span id="number"></span></h1>
+<center id="center">see you soon at our college.</center>
+<div class="printBox">
+Participant:&nbsp;<span class="particpant">phaneendra</span><br/>
+Branch :&nbsp;&nbsp;&nbsp;<span class="wing"></span><br/>
+Giving seminar on <span class="seminar_topic">Yep!</span><br/>
+your id:&nbsp;&nbsp;&nbsp;CEC-<span id="branchname_c"></span>-<span id="number_c"></span>
+
+
+</div>
+
+<div id="logo">
+<img src="college/logo.png"/>
+</div>
+
+</div>
+
+</body>
+<script src="college/jquery.js"></script>
+<script src="college/main.js"></script>
 
 </html>
